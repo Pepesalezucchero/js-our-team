@@ -46,11 +46,13 @@ for (let i = 0; i < arrayTeam.length; i++) {
     let singoloTeam = arrayTeam[i];
     console.log(singoloTeam);
 
+    /*
     //separo le informazioni
     let singolaInformazioneNome = singoloTeam.nome;
     let singolaInformazioneRuolo = singoloTeam.ruolo;
     let singolaInformazioneFoto = singoloTeam.foto;
     console.log(singolaInformazioneNome, singolaInformazioneRuolo, singolaInformazioneFoto);
+    */
 
     //stampo le stesse informazioni su DOM sotto forma di stringhe
     const userDocumento = document.querySelector(".documento");
