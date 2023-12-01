@@ -38,4 +38,11 @@ const arrayTeam = [
         "ruolo": "Graphic Designer",
         "foto": "barbara-ramos-graphic-designer.jpg"
     },
-]
+];
+
+//stampo su console ogni membro del team con le loro informazioni
+for (let i = 0; i < arrayTeam.length; i++) {
+
+    let singoloTeam = arrayTeam[i];
+    console.log(singoloTeam);
+}
