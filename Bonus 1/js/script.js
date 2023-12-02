@@ -11,7 +11,7 @@ const arrayTeam = [
     {
         "nome": "Wayne Barnett",
         "ruolo": "Founder & CEO",
-        "foto": "img/wayne-barnett-founder-ceo.jpg"
+        "foto": "img/wayne-barnett-founder-ceo.jpg" //cambiato per bonus 1 inserendo il percorso dell'immagine
     },
     {
         "nome": "Angela Caroll",
@@ -57,12 +57,17 @@ for (let i = 0; i < arrayTeam.length; i++) {
 
 
     //stampo le stesse informazioni su DOM sotto forma di stringhe
+
+    //elemento di riferimento
     const userDocumento = document.querySelector(".documento");
+    //stampo nome e cognome con aggiunta di spazio
     userDocumento.append("Nome e Cognome: " + singoloTeam.nome);
     const spazio = document.createElement("br");
     userDocumento.append(spazio);
+    //stampo il ruolo con aggiunta di spazio
     userDocumento.append("Ruolo: " + singoloTeam.ruolo);
     userDocumento.append(spazio);
+    //stampo la foto con aggiunta di spazio
     let userFoto = document.createElement("img");
     userDocumento.append(userFoto);
     userFoto.src = singoloTeam.foto;
